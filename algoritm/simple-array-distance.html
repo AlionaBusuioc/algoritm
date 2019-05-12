@@ -1,0 +1,27 @@
+<script>
+    //unidimensional array 
+    //0 ->road
+    //1 ->diamod
+    //2 ->wall
+    //9 ->robot
+      $road = [9, 0, 0, 0, 0, 0, 0, 0, 0 ,1];
+      $robot = 0; //coordinate of robot 
+      $diamond = 9; //coordinate of diamond
+      $distance = 0;
+      for($x = $robot+1; $x <$diamond; $x++){
+        $distance++;
+      }
+      document.write('<br>');
+      document.write($distance);
+      //[1, 0, 0, 0, 0, 0, 0, 0, 0 ,9];
+      $road = [1, 0, 0, 0, 0, 0, 0, 0, 0 ,9];
+      $robot = 9; //coordinate of robot 
+      $diamond = 0; //coordinate of diamond
+      $distance = 0;
+      for($x = $robot-1; $x >$diamond; $x--){
+        $distance++;
+      }
+      document.write('<br>');
+      document.write($distance);
+      
+</script>

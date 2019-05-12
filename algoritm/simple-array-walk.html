@@ -1,0 +1,24 @@
+<script>
+    //unidimensional array 
+    //0 ->road
+    //1 ->diamod
+    //2 ->wall
+    $road = [0, 0, 0, 0, 0, 0, 0, 0, 1 ,2];
+    //forward - walk
+    function forward_walk(){
+    for($i=0; $i<=9; $i++){
+        document.write($road [$i]);
+    }
+    }
+    //backward - walk
+    document.write('<br>');
+    $road = [0, 0, 0, 0, 0, 0, 0, 0, 1 ,2];
+    function backward_walk(){
+    for($i=9; $i>=0; $i--){
+        document.write($road [$i]);
+    }
+    }
+    forward_walk();
+    document.write('<br>');
+    backward_walk();
+</script>

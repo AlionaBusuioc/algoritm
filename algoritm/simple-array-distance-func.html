@@ -1,0 +1,44 @@
+<script>
+    $road = ['r', 0, 0, 0, 0, 0, 0, 0, 0 ,'d'];
+    //LOGIC/////////////
+    function search_for($what){
+        for($x = 0; $x < 10; $x++){
+     if($road[$x] == $what){
+        //  document.write($x);
+        return $x;
+     }
+    }
+    }
+    function where_is_robot(){
+      return search_for('r');
+//  for($x = 0; $x < 10; $x++){
+//      if($road[$x] == 'r'){
+//          document.write($x);
+//      }
+//  }
+    }
+    function where_is_diamond(){
+        return search_for('d');
+//  for($x = 0; $x < 10; $x++){
+//      if($road[$x] == 'd'){
+//          document.write($x);
+//      }
+ }
+ function distance($x_from, $x_to){
+$distance = 0;
+for($x = $x_from+1; $x < $x_to; $x++){
+    $distance++;
+}
+return $distance;
+ }
+    // }
+    //LOGIC/////////////////////////
+    $robot = where_is_robot();
+    document.write('<br>')
+   $diamond = where_is_diamond();
+   document.write($robot);
+   document.write($diamond);
+   document.write(distance($robot, $diamond));
+    // $r;
+    // $d;
+</script>
